@@ -1,0 +1,92 @@
+@import "./variables";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $bg-main-dark-grayish-blue;
+}
+
+.advice__container {
+  width: 35%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: $bg-card-grayish-blue;
+  opacity: 0.8;
+  box-shadow: 0px 0px 50px 0px black;
+
+  &-id {
+    color: $secondary-neon-green;
+    text-transform: uppercase;
+    font-weight: $font-weight;
+    letter-spacing: 2.5px;
+    opacity: 0.8;
+  }
+  &-text {
+    font-size: $quote-font-size;
+    font-weight: $font-weight;
+    color: white;
+    padding: 2rem 0;
+  }
+  &-hashtag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .tag {
+      padding: 0 5px;
+      font-size: 2rem;
+    }
+
+    hr {
+      width: 100%;
+      height: 0;
+      color: white;
+      opacity: 0.4;
+    }
+  }
+
+  .dice {
+    background-color: $secondary-neon-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    right: 50%;
+    bottom: -25px;
+    transform: translate(50%);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 31px 0px $secondary-neon-green;
+    }
+
+    .die {
+      width: 25px;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 90%;
+  }
+}
