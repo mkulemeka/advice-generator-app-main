@@ -13,7 +13,7 @@ const App = () => {
       .then((data) => {
         setAdvice(data.slip);
       });
-  }, [id]);
+  }, [URL]);
 
   const getQuote = () => {
     let randomId = Math.floor(Math.random() * 220);
