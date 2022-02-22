@@ -86,7 +86,11 @@ body {
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 649px) {
     width: 90%;
+  }
+
+  @media screen and (min-width: 650px) and (max-width: 1000px) {
+    width: 50%;
   }
 }
